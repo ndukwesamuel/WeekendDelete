@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <h1> Details</h1>
+
+    <h1>{{data.id}}  </h1>
+
+    <h1>{{data.name}}</h1>
+
+
+    <h2>{{data.email}}</h2>
+    <h3>{{data.Age}}</h3>
+      <img width="3" src="{{data.profile_pic.url}}" alt="dkjfkj">
+    <p> {{data.description}}</p>
+
+
+        <a href="{% url 'DeleteView' data.id %}"> <button> delete</button> </a>
+
+
+
+{% endblock content %}
